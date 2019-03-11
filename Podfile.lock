@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.1)
   - DocumentClassifier (1.0.0)
+  - Kingfisher (4.7.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - DocumentClassifier (= 1.0.0)
+  - Kingfisher (= 4.7.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - DocumentClassifier
+    - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   DocumentClassifier: 882774b0317bf8db92c9fa971a48716bea6b73f0
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
 
-PODFILE CHECKSUM: 519d434d03703c3cfc2bf5b3fbfe1e5a8e590eb3
+PODFILE CHECKSUM: cbd4c5629eaaf374d2443d1d1b7e70f36d309324
 
 COCOAPODS: 1.5.3

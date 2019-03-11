@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="259" id="VJB-d7-crK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="articleCell" rowHeight="259" id="VJB-d7-crK" customClass="ArticleCell" customModule="NewsApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="259"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJB-d7-crK" id="9yu-TO-jn4">
@@ -46,7 +46,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-nY-XOe">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-nY-XOe">
                                             <rect key="frame" x="21" y="65" width="333" height="128"/>
                                         </imageView>
                                     </subviews>
@@ -63,6 +63,11 @@
                                         <constraint firstItem="hfy-IM-4Bx" firstAttribute="top" secondItem="9yu-TO-jn4" secondAttribute="top" id="y4Z-Lp-CVq"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="articleImageView" destination="a1C-nY-XOe" id="I8m-mX-1Cd"/>
+                                    <outlet property="categoryLabel" destination="bZT-O2-BTN" id="Z6X-Sn-ONM"/>
+                                    <outlet property="titleLabel" destination="hfy-IM-4Bx" id="cCt-Qe-xvy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -130,4 +135,7 @@
             <point key="canvasLocation" x="-378" y="306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="newspaper" width="405.09890747070312" height="405.09890747070312"/>
+    </resources>
 </document>
