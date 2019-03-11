@@ -7,5 +7,5 @@ target 'NewsApp' do
 
   # Pods for NewsApp
 pod 'Alamofire', '~> 4.7'
-
+pod 'DocumentClassifier', '1.0.0'
 end
