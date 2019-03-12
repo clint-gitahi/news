@@ -10,6 +10,8 @@ class ArticleTableViewController: UITableViewController {
         super.viewDidLoad()
 
         getArticles()
+        
+        tableView.separatorStyle = .none
     }
     
     func getArticles() {
@@ -32,7 +34,8 @@ class ArticleTableViewController: UITableViewController {
             let article = articles[indexPath.row]
             
             cell.titleLabel.text = article.title
-            cell.categoryLabel.text = article.category
+            cell.categoryLabel.text = article.category.rawValue
+            cell.categoryLabel.backgroundColor = article.categoryColor
             
             let url = URL(string: article.urlToImage)
             cell.articleImageView.kf.setImage(with: url, placeholder: UIImage(named: "newspaper"), options: nil, progressBlock: nil, completionHandler: nil)
@@ -71,3 +74,4 @@ class ArticleCell : UITableViewCell {
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
 }
+
