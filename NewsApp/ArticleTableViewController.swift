@@ -31,8 +31,7 @@ class ArticleTableViewController: UITableViewController {
             cell.categoryLabel.text = article.category
             
             let url = URL(string: article.urlToImage)
-            cell.articleImageView.kf.setImage(with: url)
-            
+            cell.articleImageView.kf.setImage(with: url, placeholder: UIImage(named: "newspaper"), options: nil, progressBlock: nil, completionHandler: nil)
             return cell
         }
         return UITableViewCell()
