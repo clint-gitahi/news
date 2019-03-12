@@ -9,6 +9,10 @@ class ArticleTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        getArticles()
+    }
+    
+    func getArticles() {
         NewsHelper().getArticles {(articles) in
             self.articles = articles
             self.tableView.reloadData()
@@ -40,7 +44,25 @@ class ArticleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 260
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = articles[indexPath.row]
+        performSegue(withIdentifier: "goToUrl", sender: article)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToUrl" {
+            if let article = sender as? Article {
+                if let webVC = segue.destination as? ArticleWebViewController {
+                    webVC.article = article
+                }
+            }
+        }
+    }
 
+    @IBAction func refresh(_ sender: Any) {
+        getArticles()
+    }
 }
 
 class ArticleCell : UITableViewCell {

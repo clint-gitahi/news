@@ -77,7 +77,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="News" id="frK-5j-ikK">
                         <barButtonItem key="backBarButtonItem" title="Articles" id="dzh-87-iX7"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="eRT-w2-zDc"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="eRT-w2-zDc">
+                            <connections>
+                                <action selector="refresh:" destination="mtd-Dk-iiu" id="s28-Jk-Dfa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="QyU-IG-1nJ" kind="show" identifier="goToUrl" id="dsg-xQ-lVg"/>
