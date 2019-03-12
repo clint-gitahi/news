@@ -37,7 +37,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏀 Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-O2-BTN">
-                                            <rect key="frame" x="21" y="223" width="333" height="25"/>
+                                            <rect key="frame" x="21" y="208" width="333" height="25"/>
                                             <color key="backgroundColor" red="0.48865582191780821" green="0.81426040608630146" blue="0.83922570452465761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="25" id="bgp-0F-ZJp"/>
@@ -46,8 +46,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-nY-XOe">
-                                            <rect key="frame" x="21" y="65" width="333" height="128"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-nY-XOe">
+                                            <rect key="frame" x="21" y="65" width="333" height="113"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -58,7 +58,7 @@
                                         <constraint firstItem="bZT-O2-BTN" firstAttribute="leading" secondItem="9yu-TO-jn4" secondAttribute="leadingMargin" constant="5" id="ESe-RN-w2g"/>
                                         <constraint firstAttribute="trailing" secondItem="hfy-IM-4Bx" secondAttribute="trailing" constant="5" id="EbU-IZ-Yec"/>
                                         <constraint firstItem="bZT-O2-BTN" firstAttribute="top" secondItem="a1C-nY-XOe" secondAttribute="bottom" constant="30" id="JQa-IB-Rsn"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="bZT-O2-BTN" secondAttribute="bottom" id="bKe-cl-6KG"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bZT-O2-BTN" secondAttribute="bottom" constant="15" id="bKe-cl-6KG"/>
                                         <constraint firstItem="a1C-nY-XOe" firstAttribute="top" secondItem="hfy-IM-4Bx" secondAttribute="bottom" constant="15" id="pJy-82-bNa"/>
                                         <constraint firstItem="hfy-IM-4Bx" firstAttribute="top" secondItem="9yu-TO-jn4" secondAttribute="top" id="y4Z-Lp-CVq"/>
                                     </constraints>
